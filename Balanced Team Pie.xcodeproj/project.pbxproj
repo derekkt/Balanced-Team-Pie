@@ -14,6 +14,16 @@
 		AE41FC541A086AAC009E8A80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE41FC531A086AAC009E8A80 /* Images.xcassets */; };
 		AE41FC571A086AAC009E8A80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE41FC551A086AAC009E8A80 /* LaunchScreen.xib */; };
 		AE41FC631A086AAC009E8A80 /* Balanced_Team_PieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC621A086AAC009E8A80 /* Balanced_Team_PieTests.m */; };
+		AE41FC6E1A086C9A009E8A80 /* NewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */; };
+		AE41FC741A0875E8009E8A80 /* Pie.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC731A0875E8009E8A80 /* Pie.m */; };
+		AECBCD8C1A102CD800E9FD0E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECBCD8B1A102CD800E9FD0E /* Person.m */; };
+		AECBCD8F1A1034EB00E9FD0E /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = AECBCD8E1A1034EB00E9FD0E /* Group.m */; };
+		D861B22F1A1AD06B00820D2D /* PSRItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D861B22D1A1AD06B00820D2D /* PSRItemCell.m */; };
+		D861B2301A1AD06B00820D2D /* PSRItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D861B22E1A1AD06B00820D2D /* PSRItemCell.xib */; };
+		D8FDDC3E1A1A69650092A3C8 /* PSRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FDDC3D1A1A69650092A3C8 /* PSRTableViewController.m */; };
+		D8FDDC411A1A6B020092A3C8 /* PSRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FDDC401A1A6B020092A3C8 /* PSRPerson.m */; };
+		D8FDDC471A1A6CF00092A3C8 /* PSRPersonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FDDC461A1A6CF00092A3C8 /* PSRPersonStore.m */; };
+		D8FDDC4A1A1A71330092A3C8 /* PSRPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FDDC491A1A71330092A3C8 /* PSRPieViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,25 @@
 		AE41FC5C1A086AAC009E8A80 /* Balanced Team PieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Balanced Team PieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE41FC611A086AAC009E8A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE41FC621A086AAC009E8A80 /* Balanced_Team_PieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Balanced_Team_PieTests.m; sourceTree = "<group>"; };
+		AE41FC6C1A086C9A009E8A80 /* NewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGroupViewController.h; sourceTree = "<group>"; };
+		AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGroupViewController.m; sourceTree = "<group>"; };
+		AE41FC721A087480009E8A80 /* Pie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pie.h; sourceTree = "<group>"; };
+		AE41FC731A0875E8009E8A80 /* Pie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pie.m; sourceTree = "<group>"; };
+		AECBCD8A1A102CC100E9FD0E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AECBCD8B1A102CD800E9FD0E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		AECBCD8D1A102DDC00E9FD0E /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		AECBCD8E1A1034EB00E9FD0E /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		D861B22C1A1AD06B00820D2D /* PSRItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRItemCell.h; sourceTree = "<group>"; };
+		D861B22D1A1AD06B00820D2D /* PSRItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRItemCell.m; sourceTree = "<group>"; };
+		D861B22E1A1AD06B00820D2D /* PSRItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSRItemCell.xib; sourceTree = "<group>"; };
+		D8FDDC3C1A1A69650092A3C8 /* PSRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRTableViewController.h; sourceTree = "<group>"; };
+		D8FDDC3D1A1A69650092A3C8 /* PSRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRTableViewController.m; sourceTree = "<group>"; };
+		D8FDDC3F1A1A6B020092A3C8 /* PSRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRPerson.h; sourceTree = "<group>"; };
+		D8FDDC401A1A6B020092A3C8 /* PSRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRPerson.m; sourceTree = "<group>"; };
+		D8FDDC451A1A6CF00092A3C8 /* PSRPersonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRPersonStore.h; sourceTree = "<group>"; };
+		D8FDDC461A1A6CF00092A3C8 /* PSRPersonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRPersonStore.m; sourceTree = "<group>"; };
+		D8FDDC481A1A71330092A3C8 /* PSRPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRPieViewController.h; sourceTree = "<group>"; };
+		D8FDDC491A1A71330092A3C8 /* PSRPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRPieViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +110,15 @@
 		AE41FC451A086AAC009E8A80 /* Balanced Team Pie */ = {
 			isa = PBXGroup;
 			children = (
+				D861B22C1A1AD06B00820D2D /* PSRItemCell.h */,
+				D861B22D1A1AD06B00820D2D /* PSRItemCell.m */,
+				D861B22E1A1AD06B00820D2D /* PSRItemCell.xib */,
+				D8FDDC451A1A6CF00092A3C8 /* PSRPersonStore.h */,
+				D8FDDC461A1A6CF00092A3C8 /* PSRPersonStore.m */,
+				D8FDDC3C1A1A69650092A3C8 /* PSRTableViewController.h */,
+				D8FDDC3D1A1A69650092A3C8 /* PSRTableViewController.m */,
+				D8FDDC481A1A71330092A3C8 /* PSRPieViewController.h */,
+				D8FDDC491A1A71330092A3C8 /* PSRPieViewController.m */,
 				AE41FC4A1A086AAC009E8A80 /* AppDelegate.h */,
 				AE41FC4B1A086AAC009E8A80 /* AppDelegate.m */,
 				AE41FC4D1A086AAC009E8A80 /* ViewController.h */,
@@ -88,6 +126,16 @@
 				AE41FC501A086AAC009E8A80 /* Main.storyboard */,
 				AE41FC531A086AAC009E8A80 /* Images.xcassets */,
 				AE41FC551A086AAC009E8A80 /* LaunchScreen.xib */,
+				AE41FC6C1A086C9A009E8A80 /* NewGroupViewController.h */,
+				AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */,
+				AE41FC721A087480009E8A80 /* Pie.h */,
+				D8FDDC3F1A1A6B020092A3C8 /* PSRPerson.h */,
+				D8FDDC401A1A6B020092A3C8 /* PSRPerson.m */,
+				AE41FC731A0875E8009E8A80 /* Pie.m */,
+				AECBCD8A1A102CC100E9FD0E /* Person.h */,
+				AECBCD8B1A102CD800E9FD0E /* Person.m */,
+				AECBCD8D1A102DDC00E9FD0E /* Group.h */,
+				AECBCD8E1A1034EB00E9FD0E /* Group.m */,
 				AE41FC461A086AAC009E8A80 /* Supporting Files */,
 			);
 			path = "Balanced Team Pie";
@@ -199,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D861B2301A1AD06B00820D2D /* PSRItemCell.xib in Resources */,
 				AE41FC521A086AAC009E8A80 /* Main.storyboard in Resources */,
 				AE41FC571A086AAC009E8A80 /* LaunchScreen.xib in Resources */,
 				AE41FC541A086AAC009E8A80 /* Images.xcassets in Resources */,
@@ -219,7 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D861B22F1A1AD06B00820D2D /* PSRItemCell.m in Sources */,
+				D8FDDC411A1A6B020092A3C8 /* PSRPerson.m in Sources */,
+				D8FDDC471A1A6CF00092A3C8 /* PSRPersonStore.m in Sources */,
+				AECBCD8C1A102CD800E9FD0E /* Person.m in Sources */,
+				D8FDDC4A1A1A71330092A3C8 /* PSRPieViewController.m in Sources */,
+				AE41FC741A0875E8009E8A80 /* Pie.m in Sources */,
+				D8FDDC3E1A1A69650092A3C8 /* PSRTableViewController.m in Sources */,
+				AECBCD8F1A1034EB00E9FD0E /* Group.m in Sources */,
 				AE41FC4F1A086AAC009E8A80 /* ViewController.m in Sources */,
+				AE41FC6E1A086C9A009E8A80 /* NewGroupViewController.m in Sources */,
 				AE41FC4C1A086AAC009E8A80 /* AppDelegate.m in Sources */,
 				AE41FC491A086AAC009E8A80 /* main.m in Sources */,
 			);
@@ -412,6 +470,7 @@
 				AE41FC681A086AAC009E8A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE41FC691A086AAC009E8A80 /* Build configuration list for PBXNativeTarget "Balanced Team PieTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +479,7 @@
 				AE41FC6B1A086AAC009E8A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
