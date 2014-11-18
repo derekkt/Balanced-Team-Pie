@@ -33,7 +33,6 @@
         navItem.leftBarButtonItem = self.editButtonItem;
         
     }
-    
     return self;
 }
 
