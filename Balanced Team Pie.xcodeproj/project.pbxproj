@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE01847F1A2B3F6F009ABA0B /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE01847E1A2B3F6F009ABA0B /* NewPersonViewController.m */; };
 		AE41FC491A086AAC009E8A80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC481A086AAC009E8A80 /* main.m */; };
 		AE41FC4C1A086AAC009E8A80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC4B1A086AAC009E8A80 /* AppDelegate.m */; };
 		AE41FC4F1A086AAC009E8A80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC4E1A086AAC009E8A80 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 		AE41FC631A086AAC009E8A80 /* Balanced_Team_PieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC621A086AAC009E8A80 /* Balanced_Team_PieTests.m */; };
 		AE41FC6E1A086C9A009E8A80 /* NewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */; };
 		AE41FC741A0875E8009E8A80 /* Pie.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41FC731A0875E8009E8A80 /* Pie.m */; };
+		AE9B334F1A2AFBBE00B605BD /* ManagerSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9B334E1A2AFBBE00B605BD /* ManagerSettingsViewController.m */; };
+		AE9F5F3A1A2AA5EB00F70B81 /* GroupMemberTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9F5F381A2AA5EB00F70B81 /* GroupMemberTableViewController.m */; };
 		AECBCD8C1A102CD800E9FD0E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECBCD8B1A102CD800E9FD0E /* Person.m */; };
 		AECBCD8F1A1034EB00E9FD0E /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = AECBCD8E1A1034EB00E9FD0E /* Group.m */; };
 		D861B22F1A1AD06B00820D2D /* PSRItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D861B22D1A1AD06B00820D2D /* PSRItemCell.m */; };
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE01847D1A2B3F6F009ABA0B /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
+		AE01847E1A2B3F6F009ABA0B /* NewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPersonViewController.m; sourceTree = "<group>"; };
 		AE41FC431A086AAC009E8A80 /* Balanced Team Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Balanced Team Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE41FC471A086AAC009E8A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE41FC481A086AAC009E8A80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGroupViewController.m; sourceTree = "<group>"; };
 		AE41FC721A087480009E8A80 /* Pie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pie.h; sourceTree = "<group>"; };
 		AE41FC731A0875E8009E8A80 /* Pie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pie.m; sourceTree = "<group>"; };
+		AE9B334D1A2AFBBE00B605BD /* ManagerSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerSettingsViewController.h; sourceTree = "<group>"; };
+		AE9B334E1A2AFBBE00B605BD /* ManagerSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerSettingsViewController.m; sourceTree = "<group>"; };
+		AE9F5F371A2AA5EB00F70B81 /* GroupMemberTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMemberTableViewController.h; sourceTree = "<group>"; };
+		AE9F5F381A2AA5EB00F70B81 /* GroupMemberTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMemberTableViewController.m; sourceTree = "<group>"; };
 		AECBCD8A1A102CC100E9FD0E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		AECBCD8B1A102CD800E9FD0E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AECBCD8D1A102DDC00E9FD0E /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
@@ -110,6 +119,30 @@
 		AE41FC451A086AAC009E8A80 /* Balanced Team Pie */ = {
 			isa = PBXGroup;
 			children = (
+				AE41FC4A1A086AAC009E8A80 /* AppDelegate.h */,
+				AE41FC4B1A086AAC009E8A80 /* AppDelegate.m */,
+				AE41FC4D1A086AAC009E8A80 /* ViewController.h */,
+				AE41FC4E1A086AAC009E8A80 /* ViewController.m */,
+				AE41FC6C1A086C9A009E8A80 /* NewGroupViewController.h */,
+				AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */,
+				AE9B334D1A2AFBBE00B605BD /* ManagerSettingsViewController.h */,
+				AE9B334E1A2AFBBE00B605BD /* ManagerSettingsViewController.m */,
+				AE01847D1A2B3F6F009ABA0B /* NewPersonViewController.h */,
+				AE01847E1A2B3F6F009ABA0B /* NewPersonViewController.m */,
+				AE9F5F371A2AA5EB00F70B81 /* GroupMemberTableViewController.h */,
+				AE9F5F381A2AA5EB00F70B81 /* GroupMemberTableViewController.m */,
+				AE41FC501A086AAC009E8A80 /* Main.storyboard */,
+				AE41FC531A086AAC009E8A80 /* Images.xcassets */,
+				AE41FC551A086AAC009E8A80 /* LaunchScreen.xib */,
+				AE41FC721A087480009E8A80 /* Pie.h */,
+				AE41FC731A0875E8009E8A80 /* Pie.m */,
+				AECBCD8A1A102CC100E9FD0E /* Person.h */,
+				AECBCD8B1A102CD800E9FD0E /* Person.m */,
+				AECBCD8D1A102DDC00E9FD0E /* Group.h */,
+				AECBCD8E1A1034EB00E9FD0E /* Group.m */,
+				AE41FC461A086AAC009E8A80 /* Supporting Files */,
+				D8FDDC3F1A1A6B020092A3C8 /* PSRPerson.h */,
+				D8FDDC401A1A6B020092A3C8 /* PSRPerson.m */,
 				D861B22C1A1AD06B00820D2D /* PSRItemCell.h */,
 				D861B22D1A1AD06B00820D2D /* PSRItemCell.m */,
 				D861B22E1A1AD06B00820D2D /* PSRItemCell.xib */,
@@ -119,24 +152,6 @@
 				D8FDDC3D1A1A69650092A3C8 /* PSRTableViewController.m */,
 				D8FDDC481A1A71330092A3C8 /* PSRPieViewController.h */,
 				D8FDDC491A1A71330092A3C8 /* PSRPieViewController.m */,
-				AE41FC4A1A086AAC009E8A80 /* AppDelegate.h */,
-				AE41FC4B1A086AAC009E8A80 /* AppDelegate.m */,
-				AE41FC4D1A086AAC009E8A80 /* ViewController.h */,
-				AE41FC4E1A086AAC009E8A80 /* ViewController.m */,
-				AE41FC501A086AAC009E8A80 /* Main.storyboard */,
-				AE41FC531A086AAC009E8A80 /* Images.xcassets */,
-				AE41FC551A086AAC009E8A80 /* LaunchScreen.xib */,
-				AE41FC6C1A086C9A009E8A80 /* NewGroupViewController.h */,
-				AE41FC6D1A086C9A009E8A80 /* NewGroupViewController.m */,
-				AE41FC721A087480009E8A80 /* Pie.h */,
-				D8FDDC3F1A1A6B020092A3C8 /* PSRPerson.h */,
-				D8FDDC401A1A6B020092A3C8 /* PSRPerson.m */,
-				AE41FC731A0875E8009E8A80 /* Pie.m */,
-				AECBCD8A1A102CC100E9FD0E /* Person.h */,
-				AECBCD8B1A102CD800E9FD0E /* Person.m */,
-				AECBCD8D1A102DDC00E9FD0E /* Group.h */,
-				AECBCD8E1A1034EB00E9FD0E /* Group.m */,
-				AE41FC461A086AAC009E8A80 /* Supporting Files */,
 			);
 			path = "Balanced Team Pie";
 			sourceTree = "<group>";
@@ -268,11 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE01847F1A2B3F6F009ABA0B /* NewPersonViewController.m in Sources */,
 				D861B22F1A1AD06B00820D2D /* PSRItemCell.m in Sources */,
+				AE9B334F1A2AFBBE00B605BD /* ManagerSettingsViewController.m in Sources */,
 				D8FDDC411A1A6B020092A3C8 /* PSRPerson.m in Sources */,
 				D8FDDC471A1A6CF00092A3C8 /* PSRPersonStore.m in Sources */,
 				AECBCD8C1A102CD800E9FD0E /* Person.m in Sources */,
 				D8FDDC4A1A1A71330092A3C8 /* PSRPieViewController.m in Sources */,
+				AE9F5F3A1A2AA5EB00F70B81 /* GroupMemberTableViewController.m in Sources */,
 				AE41FC741A0875E8009E8A80 /* Pie.m in Sources */,
 				D8FDDC3E1A1A69650092A3C8 /* PSRTableViewController.m in Sources */,
 				AECBCD8F1A1034EB00E9FD0E /* Group.m in Sources */,

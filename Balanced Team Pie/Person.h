@@ -14,6 +14,10 @@
 
 @interface Person: NSObject
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *pin;
 -(void) setName:(NSString*) newName;
 -(NSString*) getName;
+
+-(void) setPin:(NSString*) newPin;
+-(NSString*)getPin;
 @end

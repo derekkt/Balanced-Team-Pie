@@ -12,6 +12,7 @@
 @implementation Person
 {
     NSString *name;
+    NSString *pin;
 }
 
 -(void) setName:(NSString *)newName{
@@ -21,6 +22,16 @@
 -(NSString*) getName{
     return name;
 }
+
+
+-(void) setPin:(NSString*) newPin{
+    pin = newPin;
+}
+-(NSString*)getPin{
+    return pin;
+}
+
+
 
 
 

@@ -5,7 +5,7 @@
 //  Created by Derek Tong on 11/3/14.
 //  Copyright (c) 2014 Derek Tong. All rights reserved.
 //
-#import "PSRTableViewController.h"
+#import "GroupMemberTableViewController.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -28,6 +28,19 @@ int groupIndex = -1;
     Group *group1 =[[Group alloc] init];
     group1.groupName = @"cs480";
     group1.password=@"apple1";
+    group1.managerPin = @"55555";
+    Person* temp1 = [[Person alloc]init];
+    temp1.name = @"derek";
+    temp1.pin = @"11111";
+    [group1 addPerson:temp1];
+    Person* temp2 = [[Person alloc]init];
+    temp2.name = @"charles";
+    temp2.pin = @"11111";
+    [group1 addPerson:temp2];
+    group1.maxSkillLevel = 5;
+    
+    group1.skillList = [[NSMutableArray alloc]initWithObjects:@"C++",@"Python", nil];
+    //[temp addObject:@"C++"];
     [groups addObject:group1];
     /*
     Group *group2 =[[Group alloc] init];
@@ -48,10 +61,10 @@ int groupIndex = -1;
            Group *group = [groups objectAtIndex:i];
            NSString* groupName = groupname.text;
            NSString* pword = password.text;
-           [self performSegueWithIdentifier: @"GroupTableSegue" sender: self];
+          // [self performSegueWithIdentifier: @"GroupTableSegue" sender: self];
            if([groupName isEqualToString:[group getGroupName]]&& [pword isEqualToString:[group getPassword]]){
                groupIndex = i;
-            //[self performSegueWithIdentifier: @"GroupTableSegue" sender: self];
+            [self performSegueWithIdentifier: @"GroupMemberTableSegue" sender: self];
            }else{
                NSLog(@"No Group exists");
            }
@@ -73,12 +86,11 @@ int groupIndex = -1;
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"createNewGroupSegue"]) {
-        NSLog(@"insideSegue1");
         ViewController *nextVC = (ViewController *)[segue destinationViewController];
         nextVC.groups = groups;
-    }else if ([[segue identifier] isEqualToString:@"GroupTableSegue"]) {
-        NSLog(@"insideSegue2");
-        PSRTableViewController *nextVC = (PSRTableViewController *)[segue destinationViewController];
+    }else if ([[segue identifier] isEqualToString:@"GroupMemberTableSegue"]) {
+        GroupMemberTableViewController *nextVC = (GroupMemberTableViewController *)[segue destinationViewController];
+        nextVC.group = [groups objectAtIndex:groupIndex];
     }
 }
 

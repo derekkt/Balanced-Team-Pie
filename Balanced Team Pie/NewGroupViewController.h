@@ -15,5 +15,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *password;
 @property (strong, nonatomic) IBOutlet UITextField *confirmPassword;
 @property (strong, nonatomic) NSMutableArray* groups;
+@property (strong, nonatomic) IBOutlet UITextField *managerPin;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPin;
+
 
 @end

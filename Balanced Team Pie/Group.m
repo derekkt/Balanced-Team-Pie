@@ -15,8 +15,13 @@
 @implementation Group{
     NSString* groupName;
     NSString* password;
+    NSString* managerPin;
     NSMutableArray *groupMembers;
     NSMutableArray *skillsOfMembers;
+    NSInteger numberOfMembers;
+    NSMutableArray* skillList;
+    NSInteger maxSkillLevel;
+    
 }
 -(id) init{
     self = [super init];
@@ -26,6 +31,10 @@
         skillsOfMembers = [[NSMutableArray alloc] init];
         groupName = [[NSString alloc]init];
         password =  [[NSString alloc]init];
+        managerPin = [[NSString alloc]init];
+        numberOfMembers = 0;
+        skillList = [[NSMutableArray alloc]init];
+        maxSkillLevel = 5;
     }
     return self;
 }
@@ -43,12 +52,13 @@
 -(NSMutableArray*) getGroup{
     return groupMembers;
 }
+
+-(void) addPerson:(Person*) newPerson{
+    [groupMembers addObject:newPerson];
+    numberOfMembers++;
+}
 -(Person*) getPerson:(int) index{
     return [groupMembers objectAtIndex:index];
-}
--(void) setPerson:(int) index :(Person*) newPerson{
-    Person* person = [groupMembers objectAtIndex:index];
-    person = newPerson;
 }
 
 
@@ -75,6 +85,23 @@
 
 -(NSString*) getPassword{
     return password;
+}
+
+-(void)setManagerPin:(NSString *)mgrPin{
+    managerPin = [mgrPin copy];
+}
+
+-(NSString*) getManagerPin{
+    return managerPin;
+}
+
+
+-(NSInteger) getNumberOfMembers{
+    return numberOfMembers;
+}
+
+-(NSMutableArray*) getSkillList{
+    return skillList;
 }
 
 
