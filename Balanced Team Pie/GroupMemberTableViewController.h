@@ -11,5 +11,6 @@
 
 @interface GroupMemberTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property Group *group;
+@property int selectedRowIndex;
 
 @end

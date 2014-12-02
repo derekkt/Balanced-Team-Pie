@@ -19,10 +19,12 @@
 @implementation GroupMemberTableViewController
 @synthesize group;
 @synthesize tableview;
+@synthesize selectedRowIndex;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",[[group getPerson:selectedRowIndex] getName]);
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)backListener:(id)sender {
@@ -41,7 +43,7 @@
         if([alertTextField.text isEqualToString:[group getManagerPin]]){
             [self performSegueWithIdentifier: @"managerSettingsSegue" sender: self];
         }else{
-            NSString *message = @"Pins do not match. Try again.";
+            NSString *message = @"Incorrect manager pin. Try again.";
             int duration = 2;
             UIAlertView *toast = [[UIAlertView alloc] initWithTitle:nil
                                                             message:message
@@ -55,8 +57,48 @@
             
         }
     }else if (alertView.tag == 3){
-         [self performSegueWithIdentifier: @"newPersonSegue" sender: self];
-       }
+        UITextField * alertTextField = [alertView textFieldAtIndex:0];
+        if([alertTextField.text isEqualToString:[group getManagerPin]]){
+            [self performSegueWithIdentifier: @"newPersonSegue" sender: self];
+        }else{
+            NSString *message = @"Incorrect manager pin. Try again.";
+            int duration = 2;
+            UIAlertView *toast = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:nil, nil];
+            [toast show];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                [toast dismissWithClickedButtonIndex:0 animated:YES];
+            });
+            
+        }
+
+        
+    }else if (alertView.tag == 4){
+        UITextField * alertTextField = [alertView textFieldAtIndex:0];
+        if([alertTextField.text isEqualToString:[[group getPerson:selectedRowIndex] getPin]]){
+            NSLog(@"login for %@ successful", [[group getPerson:selectedRowIndex] getName]);
+            //ADD CODE HERE TO PERFORM SEGUE TO PIES**************************
+            //[self performSegueWithIdentifier: @"newPersonSegue" sender: self];
+        }else{
+            NSString *message = @"Incorrect pin. Try again.";
+            int duration = 2;
+            UIAlertView *toast = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:nil, nil];
+            [toast show];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                [toast dismissWithClickedButtonIndex:0 animated:YES];
+            });
+            
+        }
+        
+        
+    }
 
     // do whatever you want to do with this UITextField.
 }
@@ -99,11 +141,12 @@
         checkPin.alertViewStyle = UIAlertViewStylePlainTextInput;
         [checkPin show];
     }else{
-        UIAlertView *messageAlert = [[UIAlertView alloc]
-                                     initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *checkPin = [[UIAlertView alloc] initWithTitle:@"Enter Pin" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil] ;
+        checkPin.tag = 4;
+        checkPin.alertViewStyle = UIAlertViewStylePlainTextInput;
+        selectedRowIndex = indexPath.row;
+        [checkPin show];
         
-        // Display Alert Message
-        [messageAlert show];
     }
     
 }

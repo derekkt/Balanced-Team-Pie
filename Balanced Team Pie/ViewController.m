@@ -42,6 +42,7 @@ int groupIndex = -1;
     group1.skillList = [[NSMutableArray alloc]initWithObjects:@"C++",@"Python", nil];
     //[temp addObject:@"C++"];
     [groups addObject:group1];
+    NSLog(@"%@",[[group1 getPerson:0]getPin]);
     /*
     Group *group2 =[[Group alloc] init];
     group2.groupName = @"cs481";

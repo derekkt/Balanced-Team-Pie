@@ -10,10 +10,9 @@
 #import "Person.h"
 
 @implementation Person
-{
-    NSString *name;
-    NSString *pin;
-}
+@synthesize name;
+@synthesize pin;
+
 
 -(void) setName:(NSString *)newName{
     name = newName;
