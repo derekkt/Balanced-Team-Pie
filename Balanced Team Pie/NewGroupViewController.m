@@ -84,7 +84,7 @@
         });
         
         
-    }else if ([mgrPin isEqualToString:confirmMgrPin] || [mgrPin length] != 5){
+    }else if ([mgrPin isEqualToString:confirmMgrPin] && [mgrPin length] != 5){
         NSScanner *scanner = [NSScanner scannerWithString:mgrPin];
         BOOL isNumeric = [scanner scanInteger:NULL] && [scanner isAtEnd];
         if(!isNumeric){
